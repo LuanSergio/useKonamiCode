@@ -7,8 +7,8 @@ const KONAMI_CODE = [
   "ArrowRight",
   "ArrowLeft",
   "ArrowRight",
-  "b",
-  "a",
+  "KeyB",
+  "KeyA",
   "Enter",
 ];
 

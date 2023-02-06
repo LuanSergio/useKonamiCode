@@ -9,8 +9,8 @@ const KONAMI_CODE = [
   "ArrowRight",
   "ArrowLeft",
   "ArrowRight",
-  "b",
-  "a",
+  "KeyB",
+  "KeyA",
   "Enter",
 ];
 
@@ -27,7 +27,7 @@ const useKonamiCode = (callback: () => void, debounceTime = 2000) => {
     setKeys((prevKeys) => [...prevKeys, event.key]);
     if (
       keys.length >= KONAMI_CODE.length ||
-      event.key !== KONAMI_CODE[keys.length]
+      event.code !== KONAMI_CODE[keys.length]
     ) {
       setKeys([]);
       return;
